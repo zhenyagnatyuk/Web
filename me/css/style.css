@@ -1,0 +1,512 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato';
+}
+
+.container{
+	width: 1170px;
+	margin: 0 auto;
+	display:flex;
+}
+
+footer{
+	background-color: #000;
+}
+
+header{
+	position: fixed;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    width: 100%;
+}
+
+header #logo_image{
+	width: 60px;
+}
+
+header .container{
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+header .menu li{
+	padding-left: 50px; 
+	list-style-type: none;
+}
+
+header .menu li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 20px;
+}
+header .menu li a:hover{
+	border-bottom: 1px solid #fff;
+	
+}
+section{
+	/*height: 100vh;*/
+}
+#underheader{
+	background-image: url("../images/background.png");
+}
+
+#underheader .container{
+	padding-top: 170px;
+	justify-content:space-between;
+}
+
+#underheader .photo{
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+}
+
+#underheader .photo img{
+	padding: 35px;
+}
+
+#underheader .photo p, #underheader .photo h1{
+	text-align: center;
+}
+
+#underheader .photo h1{
+	margin: 0 0 30px 0;
+	font-weight: 400;
+	font-size: 32px;
+}
+
+#underheader .text p{
+	font-size: 20px;
+}
+
+#underheader .photo p{
+	margin: 0 35px 35px;
+	padding: 25px 0; 
+	background-color: #EDECEE;
+	border: 1px solid #A7A2A9;
+}
+
+#underheader .text{
+	display: flex;
+	flex-direction: column;
+	width: 58%;
+	color: #fff;
+	justify-content: space-around;	
+}
+
+#underheader .text h2{
+	font-size: 30px;
+	margin: 0;
+	padding: 25px 60px;
+	background-color: #363636;
+	width: max-content;
+}
+#underheader .text h3{
+	font-size: 24px;
+}
+
+#underheader .text p{
+	margin: 0;
+}
+
+#underheader .text a{
+	text-decoration: none;
+	font-size: 20px;
+	background-color: #B91372;
+	border: 1px solid #B91372;
+	padding: 25px 100px;
+	border-radius: 36px;
+	width: fit-content;
+	color: #fff;
+}
+
+#underheader .text a:hover{
+	background-color: #fff;
+	color: #B91372;
+	transition: 0.5s;
+}
+
+#underheader .container.arrow_down{
+	padding: 10vh 0 6vh;
+	justify-content: center;
+	align-items:center;
+}
+
+#skills{
+	background-color: #FDFFFC;
+}
+
+#portfolio{
+	background-color: #D8D8E6;
+	padding: 120px 0 60px;
+}
+
+#skills .container{
+	flex-direction:column;
+	margin: 130px auto;
+}
+#education{
+	padding: 120px 0 60px;
+	background-color: #FDFFFC;
+}
+#education .container{
+	flex-direction:column;
+}
+#portfolio .container{
+	flex-direction:column;
+}
+
+#skills h2, #portfolio h2{
+	font-size: 28px;
+	text-align: center;
+}
+
+#skills .blocks, #portfolio .portfolio{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+#portfolio .portfolio{
+	justify-content: space-between;
+}
+
+#skills .block{
+	width: 30%;
+	display:flex;
+	flex-direction: column;
+	border: 2px solid #B91372;
+	padding: 75px 0 90px;
+	box-shadow: 0 10px 30px 1px #A7A2A9;
+	-webkit-transition: -moz-transform 1s ease-out; 
+	-moz-transition: -webkit-transform 1s ease-out;
+}
+
+#skills .block:hover h3, #skills .block:hover p, #skills .block:hover img{
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	transform: scale(1.05);
+	
+}
+
+#skills .block h3, #skills .block p{
+	text-align: center;
+}
+
+#skills .block h3{
+	font-size: 24px;
+	font-weight: 400;
+}
+
+#skills .block p{
+	font-size: 16px;
+}
+
+#portfolio .block{
+	width: 30%;
+	display:flex;
+	flex-direction: column;
+	padding: 0;
+	height: fit-content;
+	background-color: #B91372;
+	margin-bottom: 60px;
+}
+
+#portfolio .portfolio{
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
+#portfolio .block img{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#portfolio .block p{
+	font-size: 20px;
+	margin: 30px 0;
+	text-align: center;
+	color: #fff;
+}
+#portfolio .block:last-child{
+	text-align: -webkit-center;
+	background-color: transparent;
+	margin: 0;
+	
+}
+#portfolio .block:last-child img{
+	width: 41px;
+	padding: 30px 50px;
+	background-color: #B91372;
+	border:1px solid #B91372;
+	margin: 0;
+}
+#portfolio .block:last-child:hover img{
+	width: 41px;
+	padding: 30px 50px;
+	background-color: #fff;
+	margin: 0;
+	transition: all .3s ease-in-out;
+}
+
+#portfolio .block:last-child{
+	text-align: -webkit-center;
+	background-color: transparent;
+	margin: 0;
+}
+
+#education .block{
+	width: 50%;
+	height: 380px;
+}
+
+#education .block .text{
+	display:flex;
+	height: 100%;
+	flex-direction: column;
+	padding: 0 20px 0;
+}
+#education .block .text.vtl{
+	background-color: #B91372;
+	color: #fff;
+}
+#education .block .text.kpi{
+	background-color: #D8D8E6;
+	color: #000;
+}
+
+#education h2{
+	text-align:center;
+}
+#education .block .text h3{
+	font-size: 24px;
+	text-align:center;
+	margin-top: 40px;
+}
+
+#education .block .text p{
+	font-size: 14px;
+}
+
+#education .block img{
+	height: 100%;
+    width: 100%;
+}
+
+#education .education{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+footer{
+	padding: 15px 0;
+}
+footer .container{
+	flex-direction: row;
+	justify-content: space-between;
+	height:70px;
+}
+footer .social{
+	display: flex;
+	flex-direction: row;
+	width: 41%;
+	align-items: center;
+	justify-content: space-between;
+}
+footer .social img{
+	width: 50px;
+	height: 50px;
+}
+footer .copyright p{
+	font-size: 16px; 
+	color: #fff;
+}
+
+footer .copyright p span{
+	font-size: 12px; 
+	opacity: 0.7;
+}
+
+@media(max-width:1200px){
+	.container{
+		width: 738px;
+		padding: 0 15px;
+	}
+	#underheader .photo{
+		text-align: -webkit-center;
+	}
+	#underheader .photo img {
+		padding: 30px 0 20px 0;
+		width: 80%
+	}
+	#underheader .photo h1 {
+		font-size: 24px;
+	}
+	#underheader .text h2 {
+		font-size: 22px;
+	}
+	#underheader .text h3 {
+		font-size: 18px;
+	}
+	#underheader .text p {
+		font-size: 14px;
+	}
+	#education .block .text h3 {
+		font-size: 20px;
+	}
+	#skills .block {
+		text-align: -webkit-center;
+	}
+	#skills .block img{
+		width: 70%;
+	}
+	footer .social {
+		width: 58%;
+	}
+	#portfolio .block:last-child img {
+		width: 30px;
+		padding: 20px 40px;
+	}
+}
+@media(max-width:768px){
+	header{
+		width: 100vw;
+		padding: 20px 0 0;
+		position: absolute;
+	}
+	header .container {
+		flex-direction: column;
+	}
+	.container{
+		width: 100%;
+		padding: 0;
+	}
+	header .menu li {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+	}
+	header .menu-section{
+		width: 100%;
+	}
+	
+	header .menu li {
+		padding: 0;
+	}
+	
+	header .menu {
+		padding: 0;
+	}
+	header #logo_image {
+		width: 50px;
+	}
+	#underheader .arrow_down img{
+		width: 50px;
+	}
+	#underheader .photo h1 {
+		color: #fff;
+	}
+	#underheader .photo p, #underheader .text h2{
+		display: none;
+	}
+	#underheader .container{
+		flex-direction: column;
+	}
+	#underheader .photo {
+		background-color: transparent;
+		flex-direction: column;
+		width: 100%;
+	}
+	#underheader .container .text{
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 0 20px;
+	}
+	#underheader .text p {
+		padding: 20px 0;
+	}
+	#underheader .text a {
+		padding: 25px 65px;
+	}
+	#underheader .photo img {
+		display: none;
+	}
+	#skills .container {
+		flex-direction: column;
+		margin: 70px auto;
+	}
+	#skills .blocks{
+		margin-top: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	#skills .block {
+		width: 70%;
+		margin-bottom:20px;
+		padding: 25px 0 30px;
+	}
+	#skills .block img {
+		width: 100px;
+	}
+	#portfolio, #education {
+		padding: 40px 0 30px;
+	}
+	
+	#portfolio .portfolio{
+		margin: 0;
+		padding: 0 15px;
+	}
+	#portfolio .block {
+		width: 48%;
+	}
+	#education .block {
+		height: 200px;
+		width: 100%;
+	}
+	#education .block .text h3 {
+		font-size: 16px;
+		text-align: center;
+		margin-top: 15px;
+	}
+	#education .education{
+		padding: 0px 15px;
+	}
+	#education .block .text p {
+		font-size: 12px;
+		margin: 5px 0;
+	}
+	footer .container {
+		flex-direction: column;
+		height: auto;
+	}
+	footer .social {
+		display: flex;
+		padding: 0 15px;
+		flex-direction: row;
+		width: auto; 
+		align-items: center;
+		justify-content: space-between;
+	}
+	footer .copyright{
+		text-align: center;
+		margin-top: 10px;
+	}
+}
