@@ -1,7 +1,6 @@
 body{
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato' !important;
 }
 #btn_menu{
 	display:none;
@@ -157,7 +156,6 @@ header .menu-section{
 }
 
 #about_us  h2, #menu h2, #sales h2, #delivery h2{
-	font-family: 'Lato';
 	font-size: 80px;
 	letter-spacing: 2.5px;
 	font-weight: bold;
@@ -414,6 +412,9 @@ footer .info p{
 	}
 	#delivery .logos a img{
 		width: 200px;
+	}
+	#sales h2, #about_us h2, #menu h2, #delivery h2{
+		font-size: 50px;
 	}
 }	
 @media(max-width:767px){
